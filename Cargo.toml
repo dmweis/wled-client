@@ -1,0 +1,15 @@
+[package]
+name = "wled-client"
+version = "0.1.0"
+authors = ["David Weis <dweis7@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.10", features = ["json"] }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["full"] }
